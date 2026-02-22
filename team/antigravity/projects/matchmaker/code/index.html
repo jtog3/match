@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LoL Team Matchmaker - Premium PC Edition</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Team Matchmaker</h1>
+            <div class="usage-steps">
+                <div class="step"><span>1</span> 名前を入力</div>
+                <div class="step"><span>2</span> 希望ロールと実力を選択</div>
+                <div class="step"><span>3</span> MATCHING STARTで実行</div>
+            </div>
+        </header>
+
+        <main>
+            <div id="playerInputs" class="player-grid">
+                <!-- JS: 10 Players Generated Here -->
+            </div>
+
+            <div class="actions">
+                <button class="btn-reset" onclick="resetForm()">RESET</button>
+                <button class="btn-primary" onclick="startMatching()">MATCHING START</button>
+            </div>
+
+            <div id="results" class="results-area" style="display: none;">
+                <div id="team1" class="team-box team-blue"></div>
+                <div id="team2" class="team-box team-red"></div>
+                <div class="vs-decoration">VS</div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
